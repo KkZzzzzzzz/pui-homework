@@ -1,0 +1,29 @@
+body {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#logo {
+    width: 400px;
+}
+
+.container img {
+    width: 400px;
+    height: 400px;
+}
+
+.container {
+    text-align: center;
+}
+
+/* .container a{
+    text-align: left;
+}
+
+.container h4{
+    text-align: left;
+} */
+
+h1{
+    text-align: center;
+}

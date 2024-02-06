@@ -1,0 +1,21 @@
+body {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container{
+    text-align: center;
+}
+
+.container img{
+    width: 200px;
+    height: 200px;
+}
+
+#logo {
+    width: 400px;
+}
+
+h1{
+    text-align: center;
+}

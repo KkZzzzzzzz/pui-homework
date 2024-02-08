@@ -8,27 +8,51 @@
 <body>
 
 
-    <a href="productGallery.html">
+    <div class="flex-container-header">
+
+    <div class="flex-item-header1">
+
+    <a href="productGallery.html" >
         <img src="../assets/logo/logo-01.svg" alt="logo" id="logo">
     </a>
+
+    </div>
+
     <hr>
 
-    
-    <div class="container">
+     <div class="flex-item-header2">
+     <div class="container">
+        <div class="flex-right">
         <!-- Menu -->
+        <div class="menu">
         <a href="productGallery.html">
             <h2 id="products"><span>PRODUCTS</span></h2>
         </a>
   
         <a href="shoppingCart.html">
-            <h2 id="cart">CART</h2>
+            <h2 id="cart">CART<span id="num">2</span></h2>
         </a>
+        </div>
 
+        <hr>
+
+       <div class="subtitle">
         <h3 id="subtitle">Our hand-made cinnamon rolls</h3>
+       </div>
+
+    </div>
+
+    </div>
+    </div>
+</div>
+
+    <div class="container">
+
+        <div class="flex-container">
 
         <!-- Product Gallery -->
         <!-- Product 1 -->
-        <figure>
+        <figure class="flex-item">
             <a href="./productDetail.html">
                 <img src="../assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll">
             </a>
@@ -39,7 +63,7 @@
         </figure>
 
         <!-- Product 2 -->
-        <figure>
+        <figure class="flex-item">
             <a href="./productDetail.html">
                 <img src="../assets/products/apple-cinnamon-roll.jpg" alt="apple cinnamon roll">
             </a>
@@ -50,7 +74,7 @@
         </figure>
 
         <!-- Product 3 -->
-        <figure>
+        <figure class="flex-item">
             <a href="./productDetail.html">
                 <img src="../assets/products/raisin-cinnamon-roll.jpg" alt="raisin cinnamon roll">
             </a>
@@ -61,7 +85,7 @@
         </figure>
 
         <!-- Product 4 -->
-        <figure>
+        <figure class="flex-item">
             <a href="./productDetail.html">
                 <img src="../assets/products/walnut-cinnamon-roll.jpg" alt="walnut cinnamon roll">
             </a>
@@ -72,7 +96,7 @@
         </figure>
 
         <!-- Product 5 -->
-        <figure>
+        <figure class="flex-item"> 
             <a href="./productDetail.html">
                 <img src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="double chocolate cinnamon roll">
             </a>
@@ -83,7 +107,7 @@
         </figure>
 
         <!-- Product 6 -->
-        <figure>
+        <figure class="flex-item">
             <a href="./productDetail.html">
                 <img src="../assets/products/strawberry-cinnamon-roll.jpg" alt="strawberry cinnamon roll">
             </a>
@@ -92,6 +116,9 @@
                 <h4>$3.99</h4>
             </figcaption>
         </figure>
+
+    </div>
+
     </div>
 
 </body>

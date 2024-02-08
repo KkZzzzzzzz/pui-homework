@@ -1,0 +1,133 @@
+body {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container{
+    text-align: center;
+}
+
+.container img{
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+}
+
+#logo {
+    width: 400px;
+}
+
+h1{
+    text-align: center;
+    font-size:400%;
+}
+
+/* #products span{
+    background-color: yellow;
+    margin-right: 50px;
+} */
+
+#cart{
+    font-weight: bolder;
+    margin-right: 90px;
+    position: relative;
+    top: -15px;
+    top: -5px;
+}
+
+
+#products{
+    margin-right: 50px;
+    font-weight: normal;
+    top: -15px;
+    margin-right: 50px;
+}
+
+button{
+    background-color: yellow;
+    height: 40px;
+    width: 100px;
+    font-weight:bolder;
+}
+
+h2{
+    color:black;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+h3{
+    font-weight: normal;
+}
+
+h4{
+    font-weight: normal;
+}
+
+.remove{
+    font-weight:bolder;
+    text-decoration:underline;
+}
+
+hr{
+    height: 5px;
+    background-color: black;
+    max-width:98%;
+    margin-right:15px;
+}
+
+#total{
+    height: 5px;
+    background-color: black;
+    width:80%;
+    margin-bottom: -10px;
+}
+
+.flex-container-header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item-header1 {
+    width: calc(35%); /* 70% for the first item */
+}
+
+.flex-item-header2 {
+    margin-left:-20px;
+    width: calc(65%); /* 30% for the second item */
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    margin-top:30px;
+}
+
+#num {
+    display: inline-block; /* Make the span behave like a block-level element */
+    background-color: red; /* Add a background color for visibility */
+    padding: 0 7px; /* Add horizontal padding to create space around the text */
+    border-radius: 50%; /* Use 50% to create a circular shape */
+    color: white; /* Set text color to white */
+    line-height: 40px; /* Set line-height to match the height of the oval */
+    vertical-align: middle; /* Align text vertically */
+    position: relative; /* Enable positioning */
+    top: -8px; /* Adjust vertical position */
+    right: -10px; /* Adjust vertical position */
+}
+
+
+#subtitle{
+    line-height: 5;
+    text-align:left;
+    font-size:150%;
+    margin-top: 10px;
+}
+
+#inner-cart{
+    background-color: yellow;
+}
+

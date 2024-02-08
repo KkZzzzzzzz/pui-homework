@@ -107,16 +107,16 @@ hr{
 }
 
 #num {
-    display: inline-block; /* Make the span behave like a block-level element */
-    background-color: red; /* Add a background color for visibility */
-    padding: 0 7px; /* Add horizontal padding to create space around the text */
-    border-radius: 50%; /* Use 50% to create a circular shape */
-    color: white; /* Set text color to white */
-    line-height: 40px; /* Set line-height to match the height of the oval */
-    vertical-align: middle; /* Align text vertically */
-    position: relative; /* Enable positioning */
-    top: -8px; /* Adjust vertical position */
-    right: -10px; /* Adjust vertical position */
+    display: inline-block;
+    background-color: red;
+    padding: 0 7px;
+    border-radius: 50%;
+    color: white;
+    line-height: 40px;
+    vertical-align: middle;
+    position: relative;
+    top: -8px;
+    right: -10px;
 }
 
 

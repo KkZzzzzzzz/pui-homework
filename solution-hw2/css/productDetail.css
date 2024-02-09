@@ -1,21 +1,64 @@
 body {
     width: 1200px;
     margin: 0 auto;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 #logo {
     width: 400px;
 }
 
-.container img {
-    width: 400px;
-    height: 400px;
+.containerbody img {
+    width: 600px;
+    height: 600px;
     border: 4px solid black;
 }
 
 .container {
     text-align: center;
 }
+
+.containerbody {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-right:180px;
+}
+
+.container1{
+    margin-left:110px;
+}
+
+.container2 {
+    margin-left:20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    width:27%;
+    
+}
+
+.containerText{
+    margin-bottom:100px;
+
+}
+
+.containerOptions{
+    margin-bottom:120px;
+    font-size:120%;
+}
+
+.containerTotal{
+    align-self: flex-end;
+    font-size:120%;
+}
+
+#text{
+    margin-right:-200px;
+    max-width: 95%;
+    font-size:140%;
+}
+
 
 h1{
     text-align: center;
@@ -36,18 +79,17 @@ h1{
 
 button{
     background-color: yellow;
-    margin-left: 10px;
+    margin-left: 30px;
     font-weight:bolder;
-    height: 30px;
+    height: 38px;
+    width: 140px;
+    margin-right: 20px;
 }
 
 h2{
     color:black;
 }
 
-h3{
-    line-height: 5;
-}
 
 a{
     text-decoration: none;
@@ -74,9 +116,10 @@ hr{
 }
 
 select{
-    height: 35px;
-    width: 150px;
+    height: 45px;
+    width: 260px;
     padding-left: 10px;
+    font-size:100%;
 }
 
 #glazing {
@@ -93,12 +136,12 @@ select{
 }
 
 .flex-item-header1 {
-    width: calc(35%); /* 70% for the first item */
+    width: calc(35%);
 }
 
 .flex-item-header2 {
     margin-left:-20px;
-    width: calc(65%); /* 30% for the second item */
+    width: calc(65%);
 }
 
 .menu{

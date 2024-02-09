@@ -1,6 +1,7 @@
 body {
     width: 1200px;
     margin: 0 auto;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 #logo {
@@ -115,12 +116,12 @@ a h3:hover {
 }
 
 .flex-item-header1 {
-    width: calc(35%); /* 70% for the first item */
+    width: calc(35%);
 }
 
 .flex-item-header2 {
     margin-left:-20px;
-    width: calc(65%); /* 30% for the second item */
+    width: calc(65%);
 }
 
 .menu{

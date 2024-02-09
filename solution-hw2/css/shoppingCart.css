@@ -1,16 +1,93 @@
 body {
     width: 1200px;
     margin: 0 auto;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .container{
-    text-align: center;
+    text-align: left;
+}
+
+.containerBody{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    margin-left:400px;
+    margin-right:150px;
 }
 
 .container img{
     width: 200px;
     height: 200px;
     border: 3px solid black;
+}
+
+.containerProduct1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+}
+
+.image1{
+    width: calc(35%);
+}
+
+.des1{
+    width: calc(40%);
+}
+
+.price1{
+    width: calc(25%);
+    flex-wrap: wrap;
+    flex-direction:column;
+    text-align: right;
+    margin-top:40px;
+}
+
+
+.containerProduct2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+}
+
+
+.image2{
+    width: calc(35%);
+}
+
+.des2{
+    width: calc(40%);
+}
+
+.price2{
+    width: calc(25%);
+    flex-wrap: wrap;
+    flex-direction:column;
+    text-align: right;
+    margin-top:40px;
+}
+
+
+
+.containerTotal{
+    text-align: right;
+}
+
+
+.containerTotalFlex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+}
+
+.containerTotalText{
+    width: calc(55%);
+
+}
+
+.containerTotalTextPrice{
+    width: calc(45%);
 }
 
 #logo {
@@ -21,11 +98,6 @@ h1{
     text-align: center;
     font-size:400%;
 }
-
-/* #products span{
-    background-color: yellow;
-    margin-right: 50px;
-} */
 
 #cart{
     font-weight: bolder;
@@ -45,7 +117,7 @@ h1{
 
 button{
     background-color: yellow;
-    height: 40px;
+    height: 45px;
     width: 100px;
     font-weight:bolder;
 }
@@ -75,15 +147,12 @@ h4{
 hr{
     height: 5px;
     background-color: black;
-    max-width:98%;
     margin-right:15px;
 }
 
-#total{
-    height: 5px;
-    background-color: black;
-    width:80%;
-    margin-bottom: -10px;
+#totalLine{
+    margin-bottom: -5px;
+    margin-right:0px;
 }
 
 .flex-container-header {
@@ -92,12 +161,12 @@ hr{
 }
 
 .flex-item-header1 {
-    width: calc(35%); /* 70% for the first item */
+    width: calc(35%);
 }
 
 .flex-item-header2 {
     margin-left:-20px;
-    width: calc(65%); /* 30% for the second item */
+    width: calc(65%);
 }
 
 .menu{
@@ -117,6 +186,7 @@ hr{
     position: relative;
     top: -8px;
     right: -10px;
+    font-weight:normal;
 }
 
 
@@ -131,3 +201,6 @@ hr{
     background-color: yellow;
 }
 
+.checkout{
+    text-align:right;
+}

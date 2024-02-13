@@ -50,7 +50,7 @@
             <div class="containerOptions">
                 <!-- Glazing options -->
                 <h4 id="glazing">Glazing:</h4>
-                <select name="glazing">
+                <select name="glazing" id="glazingOptions" onchange="updateTotalPrice()">
                     <option value="Keep original">Keep original</option>
                     <option value="Sugar milk">Sugar milk</option>
                     <option value="Vanilla milk">Vanilla milk</option>
@@ -59,7 +59,7 @@
 
                 <!-- Pack size options -->
                 <h4 id="packSize">Pack size:</h4>
-                <select name="pack size">
+                <select name="pack size" id="packOptions" onchange="updateTotalPrice()">
                     <option value="1">1</option>
                     <option value="3">3</option>
                     <option value="6">6</option>
@@ -68,10 +68,17 @@
             </div>
             <div class="containerTotal">
                 <!-- Price and Add to Cart button -->
-                <h5 id="price">$2.49<button>Add to Cart</button></h5>
+                <div class="price">
+                <h5 id="price">$2.49</h5>
+                </div>
+                <div class="add">
+                <button id="add">Add to Cart</button>
+                </div>
             </div>
         </div>
     </div>
+
+    <script src="app.js"></script>
 
 </body>
 </html>

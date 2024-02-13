@@ -51,6 +51,8 @@ body {
 .containerTotal{
     align-self: flex-end;
     font-size:120%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #text{
@@ -84,6 +86,7 @@ button{
     height: 38px;
     width: 140px;
     margin-right: 20px;
+    margin-top:15px;
 }
 
 h2{

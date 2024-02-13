@@ -22,18 +22,30 @@ const packOptions = {
     "12": 10
 };
 
+//glazing options
+for (const option in glazingOptions) {
+    const glazingOption = document.createElement("option");
+    glazingOption.value = option;
+    glazingOption.textContent = option;
+    glazingSelector.appendChild(glazingOption);
+}
+
+//pack size options
+for (const option in packOptions) {
+    const packOption = document.createElement("option");
+    packOption.value = option;
+    packOption.textContent = option;
+    packSelector.appendChild(packOption);
+}
+
 function updateTotalPrice() {
     const glazingSelector = document.getElementById("glazingOptions");
     const packSelector = document.getElementById("packOptions");
-
     //update glazing price and pack price
     glazingPrice = glazingOptions[glazingSelector.value];
     packPrice = packOptions[packSelector.value];
-
     //total price
     totalPrice = (basePrice + glazingPrice) * packPrice;
-
     //change text
     document.getElementById("price").textContent = `$${totalPrice.toFixed(2)}`;
 }
-

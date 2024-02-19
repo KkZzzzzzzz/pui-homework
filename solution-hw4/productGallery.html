@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Gallery</title>
+    <link rel="stylesheet" href="./css/productGallery.css">
+</head>
+<body>
+    <header>
+        <div class="flex-container-header">
+            <div class="flex-item-header1">
+                <a href="productGallery.html" >
+                    <img src="../assets/logo/logo-01.svg" alt="logo" id="logo">
+                </a>
+            </div>
+            <hr>
+            <div class="flex-item-header2">
+                <div class="flex-right">
+                    <!-- Menu -->
+                    <div class="menu">
+                        <a href="productGallery.html">
+                            <h2 id="products"><span>PRODUCTS</span></h2>
+                        </a>
+                        <a href="shoppingCart.html">
+                            <h2 id="cart">CART<span id="num">2</span></h2>
+                        </a>
+                    </div>
+                    <hr>
+                    <div class="subtitle">
+                        <h3 id="subtitle">Our hand-made cinnamon rolls</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="flex-container">
+            <!-- Product Gallery -->
+            <!-- Product 1 -->
+            <figure class="flex-item">
+                <a href="./productDetail.html?roll=Original">
+                    <img src="../assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll">
+                </a>
+                <figcaption>
+                    <h3>Original cinnamon roll</h3>
+                    <h4>$2.49</h4>
+                </figcaption>
+            </figure>
+
+            <!-- Product 2 -->
+            <figure class="flex-item">
+                <a href="./productDetail.html?roll=Apple">
+                    <img src="../assets/products/apple-cinnamon-roll.jpg" alt="apple cinnamon roll">
+                </a>
+                <figcaption>
+                    <h3>Apple cinnamon roll</h3>
+                    <h4>$3.49</h4>
+                </figcaption>
+            </figure>
+
+            <!-- Product 3 -->
+            <figure class="flex-item">
+                <a href="./productDetail.html?roll=Raisin">
+                    <img src="../assets/products/raisin-cinnamon-roll.jpg" alt="raisin cinnamon roll">
+                </a>
+                <figcaption>
+                    <h3>Raisin cinnamon roll</h3>
+                    <h4>$2.99</h4>
+                </figcaption>
+            </figure>
+
+            <!-- Product 4 -->
+            <figure class="flex-item">
+                <a href="./productDetail.html?roll=Walnut">
+                    <img src="../assets/products/walnut-cinnamon-roll.jpg" alt="walnut cinnamon roll">
+                </a>
+                <figcaption>
+                    <h3>Walnut cinnamon roll</h3>
+                    <h4>$3.49</h4>
+                </figcaption>
+            </figure>
+
+            <!-- Product 5 -->
+            <figure class="flex-item"> 
+                <a href="./productDetail.html?roll=Double-Chocolate">
+                    <img src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="double chocolate cinnamon roll">
+                </a>
+                <figcaption>
+                    <h3>Double-chocolate cinnamon roll</h3>
+                    <h4>$3.99</h4>
+                </figcaption>
+            </figure>
+
+            <!-- Product 6 -->
+            <figure class="flex-item">
+                <a href="./productDetail.html?roll=Strawberry">
+                    <img src="../assets/products/strawberry-cinnamon-roll.jpg" alt="strawberry cinnamon roll">
+                </a>
+                <figcaption>
+                    <h3>Strawberry cinnamon roll</h3>
+                    <h4>$3.99</h4>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+    <script src="./js/rollsData.js"></script>
+</body>
+</html>

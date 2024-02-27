@@ -1,0 +1,191 @@
+body {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container{
+    text-align: left;
+}
+
+.containerBody{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    margin-left:400px;
+    margin-right:150px;
+}
+
+.container img{
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+}
+
+.containerProduct{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+}
+
+.image{
+    width: calc(35%);
+}
+
+.des{
+    width: calc(40%);
+}
+
+.price{
+    width: calc(25%);
+    flex-wrap: wrap;
+    flex-direction:column;
+    text-align: right;
+    margin-top:40px;
+}
+
+.containerProduct{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+}
+
+
+.containerTotal{
+    text-align: right;
+}
+
+
+.containerTotalFlex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+}
+
+.containerTotalText{
+    width: calc(40%);
+    
+}
+
+.containerTotalTextPrice{
+    width: calc(60%);
+}
+
+#logo {
+    width: 400px;
+}
+
+h1{
+    text-align: center;
+    font-size:400%;
+}
+
+#cart{
+    font-weight: bolder;
+    margin-right: 90px;
+    position: relative;
+    top: -15px;
+    top: -5px;
+}
+
+
+#products{
+    margin-right: 50px;
+    font-weight: normal;
+    top: -15px;
+    margin-right: 50px;
+}
+
+button{
+    background-color: yellow;
+    height: 45px;
+    width: 100px;
+    font-weight:bolder;
+}
+
+h2{
+    color:black;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+h3{
+    font-weight: normal;
+}
+
+h4{
+    font-weight: normal;
+}
+
+.remove{
+    font-weight:bolder;
+    text-decoration:underline;
+}
+
+.remove:hover {
+    cursor: pointer;
+}
+
+hr{
+    height: 5px;
+    background-color: black;
+    margin-right:15px;
+}
+
+#totalLine{
+    margin-bottom: -5px;
+    margin-right:0px;
+}
+
+.flex-container-header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item-header1 {
+    width: calc(35%);
+}
+
+.flex-item-header2 {
+    margin-left:-20px;
+    width: calc(65%);
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    margin-top:30px;
+}
+
+#num {
+    display: inline-block;
+    background-color: red;
+    padding: 0 7px;
+    border-radius: 50%;
+    color: white;
+    line-height: 40px;
+    vertical-align: middle;
+    position: relative;
+    top: -8px;
+    right: -10px;
+    font-weight:normal;
+}
+
+
+#subtitle{
+    line-height: 5;
+    text-align:left;
+    font-size:150%;
+    margin-top: 10px;
+}
+
+#inner-cart{
+    background-color: yellow;
+}
+
+.checkout{
+    text-align:right;
+}

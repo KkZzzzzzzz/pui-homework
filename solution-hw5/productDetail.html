@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Detail Page</title>
+    <link rel="stylesheet" href="./css/productDetail.css">
+</head>
+<body>
+
+<header>
+    <div class="flex-container-header">
+        <div class="flex-item-header1">
+            <a href="productGallery.html">
+                <img src="../assets/logo/logo-01.svg" alt="logo" id="logo">
+            </a>
+        </div>
+        <hr>
+        <div class="flex-item-header2">
+            <div class="container">
+                <div class="flex-right">
+                    <!-- Menu -->
+                    <div class="menu">
+                        <a href="productGallery.html">
+                            <h2 id="products"><span>PRODUCTS</span></h2>
+                        </a>
+                        <a href="shoppingCart.html">
+                            <h2 id="cart">CART<span id="num">2</span></h2>
+                        </a>
+                    </div>
+                    <hr>
+                    <div class="subtitle">
+                        <h3 id="subtitle">Our hand-made cinnamon rolls</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="containerbody">
+    <div class="container1">
+        <!-- Product image -->
+        <img src="" alt="cinnamon roll" id="productImage">
+    </div>
+
+    <div class="container2">
+        <div class="containerText">
+            <h3 id="text">Customize our delicious, hand-made cinnamons to your liking!</h3>
+        </div>
+        <div class="containerOptions">
+            <!-- Glazing options -->
+            <h4 id="glazing">Glazing:</h4>
+            <select name="glazing" id="glazingOptions" onchange="updateTotalPrice()">
+            </select>
+
+            <!-- Pack size options -->
+            <h4 id="packSize">Pack size:</h4>
+            <select name="pack size" id="packOptions" onchange="updateTotalPrice()">
+            </select>
+        </div>
+        <div class="containerTotal">
+            <!-- Price and Add to Cart button -->
+            <div class="price">
+                <h5 id="price">$2.49</h5>
+            </div>
+            <div class="add">
+                <button id="add">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./js/rollsData.js"></script>
+<script src="./js/app.js"></script>
+
+</body>
+</html>

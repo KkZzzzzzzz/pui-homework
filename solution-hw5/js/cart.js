@@ -59,16 +59,16 @@ const packOptions = {
 const cart = [];
 
 //add roll to cart
-const original = new Roll("Original", "Sugar milk", "1", 2.49);
+const original = new Roll("Original", "Sugar milk", "1", rolls['Original'].basePrice);
 cart.push(original);
 
-const walnut = new Roll("Walnut", "Vanilla milk", "12", 3.49);
+const walnut = new Roll("Walnut", "Vanilla milk", "12", rolls['Walnut'].basePrice);
 cart.push(walnut);
 
-const raisin = new Roll("Raisin", "Sugar milk", "3", 2.99);
+const raisin = new Roll("Raisin", "Sugar milk", "3", rolls['Raisin'].basePrice);
 cart.push(raisin);
 
-const apple = new Roll("Apple", "Keep original", "3", 3.49);
+const apple = new Roll("Apple", "Keep original", "3", rolls['Apple'].basePrice);
 cart.push(apple);
 
 //update the cart items in html

@@ -42,12 +42,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-h1{
-    margin: 10px;
-    text-align: center;
-}
-
-h2{
+h1, h2{
     margin: 10px;
     text-align: left;
 }

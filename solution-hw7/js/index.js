@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     canvas.width = 4000;
     canvas.height = 4000;
-    const ctx = canvas.getContext('2d');
+    const g = canvas.getContext('2d');
 
     function drawGrass() {
         for (let i = 0; i < 1000000; i++) {
@@ -14,17 +14,19 @@ document.addEventListener('DOMContentLoaded', function() {
             let height = Math.random() * 20 + 10;
             let width = 2;
             let grey = Math.floor(Math.random() * 155 + 100);
-            ctx.beginPath();
-            ctx.moveTo(x, y);
-            ctx.lineTo(x + width, y - height);
-            ctx.lineTo(x - width, y - height);
-            ctx.fillStyle = `rgb(${grey}, ${grey}, ${grey})`;
-            ctx.fill();
+            g.beginPath();
+            g.moveTo(x, y);
+            g.lineTo(x + width, y - height);
+            g.lineTo(x - width, y - height);
+            g.fillStyle = `rgb(${grey}, ${grey}, ${grey})`;
+            g.fill();
         }
     }
 
+    //draw grass
     drawGrass();
 
+    // draw scarecrow characters from the list
     const savedCharacters = JSON.parse(sessionStorage.getItem('characters') || '[]');
     if (savedCharacters.length > 0) {
         savedCharacters.forEach(character => {
@@ -36,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let hasMoved = false;
     let startX, startY;
 
+    //track mouse down
     imageWrapper.addEventListener('mousedown', function(event) {
         isDragging = true;
         startX = event.clientX;
@@ -43,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
     });
 
+    //track mouse move, move == dragging, no character is placed
     document.addEventListener('mousemove', function(event) {
         if (isDragging) {
             hasMoved = true;
@@ -56,9 +60,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    //mouseup no dragging, place a scarecrow
     document.addEventListener('mouseup', function(event) {
         if (!hasMoved) {
-            placeCharacter(event);
+            placeScarecrow(event);
         }
         isDragging = false;
         hasMoved = false;
@@ -73,7 +78,8 @@ document.addEventListener('DOMContentLoaded', function() {
         imageWrapper.style.top = newTop + 'px';
     }
 
-    function placeCharacter(event) {
+    //get the scarecrow from list and place it 
+    function placeScarecrow(event) {
         const confirmedCharacter = JSON.parse(sessionStorage.getItem('confirmedCharacter') || 'null');
         if (confirmedCharacter) {
             const { offsetX, offsetY } = event;
@@ -86,6 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    //this is only for displaying the scarecrows that are already there
     function displayCharacterNoAnimation({ hat, clothing, expression, x, y }) {
         const characterContainer = document.createElement('div');
         characterContainer.className = 'character';
@@ -111,6 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('draggableCanvas').appendChild(characterContainer);
     }
 
+    //this is for displaying the new scarecrow
     function displayCharacter({ hat, clothing, expression, x, y }) {
         const characterContainer = document.createElement('div');
         characterContainer.className = 'character';

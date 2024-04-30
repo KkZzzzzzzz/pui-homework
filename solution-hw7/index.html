@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href=",/css/index.css">
     <title>Scarecrow Field</title>
 </head>
 
@@ -30,10 +30,11 @@
         </ul>
     </nav>
     <div class="container" onclick="placeCharacter(event)">
+        <!-- draw grass on canvas -->
         <div class="imageWrapper" id="draggableCanvas">
-            <canvas id="grassCanvas" style="filter: url('#rough');"></canvas>
+            <canvas id="grassCanvas"></canvas>
         </div>
     </div>
-    <script src="index.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

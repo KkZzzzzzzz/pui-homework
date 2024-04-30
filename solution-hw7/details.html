@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet" href="./css/details.css">
     <title>Scarecrow Field</title>
 </head>
 
@@ -39,6 +39,7 @@
             <div class="row">
                 <h2>Hats</h2>
             </div>
+            <!-- hat options -->
             <div class="row">
                 <div class="option" onclick="changeHat('./images/hat1.png')"><img src="./images/hat1.png" alt="Hat 1"></div>
                 <div class="option" onclick="changeHat('./images/hat2.png')"><img src="./images/hat2.png" alt="Hat 2"></div>
@@ -46,6 +47,7 @@
                 <div class="option" onclick="changeHat('./images/hat4.png')"><img src="./images/hat4.png" alt="Hat 4"></div>
                 <div class="option" onclick="changeHat('./images/hat5.png')"><img src="./images/hat5.png" alt="Hat 5"></div>
             </div>
+            <!-- face options -->
             <div class="row">
                 <h2>Facial Expressions</h2>
             </div>
@@ -56,6 +58,7 @@
                 <div class="option" onclick="changeFacialExpression('./images/face4.png')"><img src="./images/face4.png" alt="Expression 4"></div>
                 <div class="option" onclick="changeFacialExpression('./images/face5.png')"><img src="./images/face5.png" alt="Expression 2"></div>
             </div>
+            <!-- clothing options -->
             <div class="row">
                 <h2>Clothing</h2>
             </div>
@@ -69,6 +72,6 @@
             <button id="confirmButton" onclick="saveCharacterDesign()" disabled>Confirm</button>
         </div>
     </div>
-    <script src="details.js"></script>
+    <script src="./js/details.js"></script>
 </body>
 </html>
